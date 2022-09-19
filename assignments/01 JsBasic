@@ -1,0 +1,43 @@
+question 1:
+Take a number as input and print the multiplication table for it.
+
+let n=parseInt(prompt(""))
+for(let i=1;i<=10;i++){
+  let r=i*n;
+  console.log(`${r}=${i}*${n}`)
+}
+#############################
+
+question2
+Multiplication Table Up to a Range
+
+let n=parseInt(prompt("enter number"))
+let range=parseInt(prompt("enter rnge"))
+for(let i=1;i<=range;i++){
+  let r=i*n;
+  console.log(`${r}=${i}*${n}`)
+}
+
+#####################################
+question 3
+Take two numbers and print the sum of both.
+
+let no1=parseInt(prompt("enter number"))
+let no2=parseInt(prompt("enter no2"))
+
+  let r=no1+no2;
+  console.log(`${r}=${no2}+${no1}`)
+###############################################
+question 4
+Input a year and find whether it is a leap year or not.
+
+let year = parseInt(prompt('enter year'));
+if (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) {
+  console.log('leap year');
+} else {
+  console.log('not a leap year');
+}
+
+################################################
+Take 2 numbers as inputs and find their HCF and LCM.
+Keep taking numbers as inputs till the user enters ‘x’, after that print sum of all.
