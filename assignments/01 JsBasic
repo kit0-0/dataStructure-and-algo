@@ -39,5 +39,36 @@ if (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0)) {
 }
 
 ################################################
+
+Question 5
 Take 2 numbers as inputs and find their HCF and LCM.
-Keep taking numbers as inputs till the user enters ‘x’, after that print sum of all.
+
+let hcf;
+// take input
+const number1 = prompt('Enter a first positive integer: ');
+const number2 = prompt('Enter a second positive integer: ');
+
+// looping from 1 to number1 and number2 to find HCF
+for (let i = 1; i <= number1 && i <= number2; i++) {
+  // check if is factor of both integers
+  if (number1 % i == 0 && number2 % i == 0) {
+    hcf = i;
+  }
+}
+
+// find LCM
+let lcm = (number1 * number2) / hcf;
+
+// display the hcf
+console.log(`HCF of ${number1} and ${number2} is ${lcm}.`);
+#############################################################################
+
+question6
+Keep taking numbers as inputs till the user enters ‘0’, after that print sum of all.
+let x,sum
+while(x!==0){
+  x=parseInt(prompt("enter value:"))
+  sum=sum+x
+}
+console.log("total sum "+sum)
+
