@@ -72,3 +72,11 @@ while(x!==0){
 }
 console.log("total sum "+sum)
 
+#################################
+Q7.Write a program to print whether a number is even or odd, also take input from the user.
+let x = parseInt(prompt('enter value:'));
+if (x % 2 == 0) {
+  console.log(`${x} is even`);
+} else {
+  console.log(`${x} is odd`);
+}
