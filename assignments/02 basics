@@ -1,10 +1,57 @@
+Q1 Write a program to input principal, time, and rate (P, T, R) from the user and find Simple Interest.
 
-################################################
+let p = parseInt(prompt("Principal"))
+let t = parseInt(prompt("Time"))
+let r = parseInt(prompt("Rate"))
+let A =(p*r*t)/100
+console.log(`simple intrest ${A}`)
 
-Write a program to input principal, time, and rate (P, T, R) from the user and find Simple Interest.
-Take in two numbers and an operator (+, -, *, /) and calculate the value. (Use if conditions)
-Take 2 numbers as input and print the largest number.
-Input currency in rupees and output in USD.
-To calculate Fibonacci Series up to n numbers.
-To find out whether the given String is Palindrome or not.
-To find Armstrong Number between two given number.
+##################################################################
+
+Q2 Take in two numbers and an operator (+, -, *, /) and calculate the value. (Use if conditions)
+
+const operator = prompt('Enter operator ( either +, -, * or / ): ');
+const num1 = parseInt(prompt('number 1'));
+const num2 = parseInt(prompt('number 2'));
+let r;
+if (operator == '+') {
+  r = num1 + num2;
+} else if (operator == '-') {
+  r = num1 - num2;
+} else if (operator == '*') {
+  r = num1 * num2;
+} else {
+  r = num1 / num2;
+}
+console.log(`${num1} ${operator} ${num2} =${r}`);
+
+##############################################
+
+Q3Take 2 numbers as input and print the largest number.
+
+const num1 = parseFloat(prompt('Enter first number: '));
+const num2 = parseFloat(prompt('Enter second number: '));
+if (num1 > num2) {
+  console.log(`largest number ${num1}`);
+} else {
+  console.log(`largest number ${num2}`);
+}
+
+######################################################
+
+Q5To calculate Fibonacci Series up to n numbers.
+let n1 = 0,
+  n2 = 1,
+  nextterm;
+const number = parseInt(prompt());
+for (let i = 1; i <= number; i++) {
+  console.log(n1);
+  nextterm = n1 + n2;
+  n1 = n2;
+  n2 = nextterm;
+}
+###################################################
+Q6To find out whether the given String is Palindrome or not.
+
+
+Q7To find Armstrong Number between two given number.
