@@ -23,3 +23,17 @@ var runningSum = function(nums) {
     }
     return output
 };
+
+Richest Customer Wealth
+var maximumWealth = function(accounts) {
+    var storeValue =0
+   for (let i = 0; i < accounts.length; i++) {
+       var innerArr = accounts[i];
+        var sum =0
+        for(let j=0;j<innerArr.length;j++){
+            sum =sum+ innerArr[j]}
+         
+storeValue = Math.max(storeValue, sum)
+}
+  return  storeValue     
+};
